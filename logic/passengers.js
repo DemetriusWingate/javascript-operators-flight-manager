@@ -3,7 +3,7 @@
 function Passengers() {
 
     function checkFlightCapacity(flightCapacity, passengersArray) {
-      let passengersNumber = 150;
+      let passengersNumber = 0;
       let passengers;
       
       for(passengers of passengersArray) {
