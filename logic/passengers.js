@@ -73,7 +73,6 @@ function Passengers() {
                 }
             } else {
                 break;
-
             }
         }
         return passengersWithSeats;
