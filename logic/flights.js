@@ -35,9 +35,9 @@ function Flights() {
         if (totalDistance > distanceLimit/2) {
             return "The revision needs to be done within the next 3 months";
         } else if (totalDistance <= 3 * distanceLimit/4) {
-            return "The revision needs to be within the next 2 months";
+            return "The revision needs to be done within the next 2 months";
         } else {
-            return "The revision needs to be within the month";
+            return "The revision needs to be done within the month";
         }
     }
     return{calculateNumberOfFlights, checkAircraftRevision};
