@@ -29,7 +29,7 @@ function Flights() {
         }
 
         if (totalDistance > distanceLimit) {
-            throw new Error("Flight maximum allowed distance (" + distanceLimit + ") exceeded. No flight is allowed any longer "
+            throw new Error("Flight maximum allowed distance (" + distanceLimit + ") exceeded. No flight is allowed any longer."
         )}
 
         if (totalDistance > distanceLimit/2) {
