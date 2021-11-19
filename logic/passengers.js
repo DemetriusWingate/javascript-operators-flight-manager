@@ -12,7 +12,7 @@ function Passengers() {
 
       if (passengersNumber > flightCapacity) {
           throw new Error("Flight capacity (" + flightCapacity + ") exceeded. You have " + passengersNumber )
-      }
+        }
 
         return passengersNumber;
     }
@@ -28,17 +28,14 @@ function Passengers() {
         var vipBusinessConfiguration = {passengers:vipPassengers, seats:availableBusinessSeats};
         vipPassengersWithBusinessSeats = updateConfiguration(vipBusinessConfiguration, businessSeatsPerFlight); 
             
-        var vipEconomyConfiguration = {passengers:vipBusinessConfiguration.passengers, 
-            seats:availableEconomySeats};
+        var vipEconomyConfiguration = {passengers:vipBusinessConfiguration.passengers, seats:availableEconomySeats};
         vipPassengersWithBusinessSeats = updateConfiguration(vipEconomyConfiguration, economySeatsPerFlight);
         
-        var regularBusinessConfiguration = {passengers:regularPassengers, 
-            seats:vipBusinessConfiguration.seats};
+        var regularBusinessConfiguration = {passengers:regularPassengers, seats:vipBusinessConfiguration.seats};
         regularPassengersWithBusinessSeats = updateConfiguration(regularBusinessConfiguration, 
             businessSeatsPerFlight);
 
-        var regularEconomyConfiguration = {passengers:regularBusinessConfiguration.passengers, 
-            seats:vipEconomyConfiguration.seats};
+        var regularEconomyConfiguration = {passengers:regularBusinessConfiguration.passengers, seats:vipEconomyConfiguration.seats};
             regularPassengersWithEconomySeats = updateConfiguration(regularEconomyConfiguration, 
             economySeatsPerFlight);
         

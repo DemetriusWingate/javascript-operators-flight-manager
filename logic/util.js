@@ -11,13 +11,13 @@ function Util() {
         }
 
         return totalDistributedPassengers;
-    }
+        }
 
-    function calculateTotalNumberOfPassengers(passengersArray) {
-        let totalNumberOfPassengers = 0;
-        let passengers;
+        function calculateTotalNumberOfPassengers(passengersArray) {
+            let totalNumberOfPassengers = 0;
+            let passengers;
 
-        for (passengers of passengersArray) {
+            for (passengers of passengersArray) {
             totalNumberOfPassengers += passengers;
         }
 
