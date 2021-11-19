@@ -25,7 +25,7 @@ function Util() {
     }
 
     function checkInput(input) {
-        if (!input(input)) {
+        if (!input) {
             throw new Error("Incorrect values. Check all input fields to be filled in.");
         }
         if (isNaN(input)) {
