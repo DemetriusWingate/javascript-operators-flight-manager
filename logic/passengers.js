@@ -26,8 +26,7 @@ function Passengers() {
         let availableEconomySeats = nrOfFlights * economySeatsPerFlight;
 
         var vipBusinessConfiguration = {passengers:vipPassengers, seats:availableBusinessSeats};
-        vipPassengersWithBusinessSeats = updateConfiguration(vipBusinessConfiguration, 
-            businessSeatsPerFlight); 
+        vipPassengersWithBusinessSeats = updateConfiguration(vipBusinessConfiguration, businessSeatsPerFlight); 
             
         var vipEconomyConfiguration = {passengers:vipBusinessConfiguration.passengers, 
             seats:availableEconomySeats};
